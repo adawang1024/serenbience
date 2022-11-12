@@ -31,12 +31,20 @@ html {
   height: 100%;
 }
 
+.vertical-center {
+  margin:0;
+  top: 50%;
+  position:absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 h1 {
   text-align: center;
   text-transform: lowercase;
   color: #e1fff6;
   text-shadow: 2px 2px 2px #9baeab;
-  margin-top: 1.3em;
+  position:relative;
   font-size: 5em;
   font-family: "Montserrat", sans-serif;
 }
@@ -70,16 +78,28 @@ h1 {
 }
 
 .answerButton {
-  
+  color: ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #78d0e2;
+  border-style: solid;
+  border-color: rgba(117, 114, 180, 1);
+  border-radius: 10px;
+  margin:2em;
 }
 
-
-
 .question {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    font-family: "Sono", sans-serif;
   font-size: 1.45em;
-  color:  rgba(117, 114, 180, 1);
+  color: #abdbe3;
 }
 
 button:hover {
-  cursor:pointer;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
