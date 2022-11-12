@@ -132,3 +132,10 @@ button:hover {
 audio {
   visibility:hidden;
 }
+
+#finalGif {
+  opacity: 0.4;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

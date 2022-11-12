@@ -52,10 +52,7 @@ function nextQuestion() {
   }
   if (questionNum === "aaa") {
     $(".question").text("Final result for library");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
+    
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -121,3 +118,7 @@ $("#right").click(function () {
 // 'aaa' = library
 // 'aab' = cafe
 // 'aba' = rain
+
+// var player = document.getElementById('playButton');
+// player.pause();
+// player.src = player.src;
