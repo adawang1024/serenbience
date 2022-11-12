@@ -34,10 +34,10 @@ html {
 h1 {
   text-align: center;
   text-transform: lowercase;
-  color: #E1FFF6;
-  text-shadow: 2px 2px 2px #9BAEAB;
+  color: #e1fff6;
+  text-shadow: 2px 2px 2px #9baeab;
   margin-top: 1.3em;
-  font-size:5em;
+  font-size: 5em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -45,29 +45,41 @@ h1 {
   text-align: center;
   padding: 1.5em;
   font-family: "Sono", sans-serif;
-  color: #CDF1E7;
+  color: #cdf1e7;
   font-size: 1.45em;
 }
 
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  text-align: center;
 }
 
 .quizButton {
-/*   display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left:auto; */
   color: rgba(117, 114, 180, 1);
-  font-family:'Sono', sans-serif;
-  background-color:#CDF1E7;
-  border-style:solid;
-  border-color:rgba(117, 114, 180, 1);
-  border-radius:10px;
-  padding:15px;
-  text-transform:uppercase;
+  font-family: "Sono", sans-serif;
+  background-color: #cdf1e7;
+  border-style: solid;
+  border-color: rgba(117, 114, 180, 1);
+  border-radius: 10px;
+  margin-top: 2em;
+  padding: 1.5em;
+  text-transform: uppercase;
+}
+
+.answerButton {
+  
+}
+
+
+
+.question {
+  font-size: 1.45em;
+  color:  rgba(117, 114, 180, 1);
+}
+
+button:hover {
+  cursor:pointer;
 }
