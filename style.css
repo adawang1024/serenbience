@@ -32,11 +32,12 @@ html {
 }
 
 .vertical-center {
-  margin:0;
+  margin: 0;
   top: 50%;
+  left: 50%;
   position:absolute;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -44,13 +45,14 @@ h1 {
   text-transform: lowercase;
   color: #e1fff6;
   text-shadow: 2px 2px 2px #9baeab;
-  position:relative;
+  position: relative;
   font-size: 5em;
   font-family: "Montserrat", sans-serif;
 }
 
 .description {
   text-align: center;
+  position: relative;
   padding: 1.5em;
   font-family: "Sono", sans-serif;
   color: #cdf1e7;
@@ -62,6 +64,7 @@ h1 {
 }
 
 .quizButton {
+  position:relative;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -86,14 +89,14 @@ h1 {
   border-style: solid;
   border-color: rgba(117, 114, 180, 1);
   border-radius: 10px;
-  margin:2em;
+  margin: 2em;
 }
 
 .question {
   justify-content: center;
   align-items: center;
   text-align: center;
-    font-family: "Sono", sans-serif;
+  font-family: "Sono", sans-serif;
   font-size: 1.45em;
   color: #abdbe3;
 }
