@@ -29,13 +29,22 @@ html {
   background-size: cover;
   width: 100%;
   height: 100%;
-  font-family: "Dosis", sans-serif;
 }
 
 h1 {
   text-align: center;
   text-transform: lowercase;
-  color: #CEF9F1;
-  text-shadow: 2px 2px 2px #C5DBD7;
-  margin-top: 27%;
+  color: #E1FFF6;
+  text-shadow: 2px 2px 2px #9BAEAB;
+  margin-top: 1.3em;
+  font-size:5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description {
+  text-align: center;
+  padding: 1.5em;
+  font-family: "Sono", sans-serif;
+  color: #CDF1E7;
+  
 }
