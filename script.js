@@ -1,62 +1,49 @@
-let questionNum = 0;
+var questionNum = "";
 
-let qCount = 1;
+var qCount = 1;
 
 // let currId1 = '#indoors';
 // let currId2 = '#outdoors';
 
 function nextQuestion() {
-  if(questionNum === 1) {
+  if (questionNum === 'a') {
     $(".question").text("Do you prefer day or night?");
-    $("#indoors").attr("id", "day").text("Day");
-    $("#outdoors").attr("id", "night").text("Night");
+    // $("#indoors").attr("id", "day").text("Day");
+    // $("#outdoors").attr("id", "night").text("Night");
+    $("#left").text("Day");
+    $("#right").text("Night");
     qCount++;
     $("#qNum").text(qCount);
   }
-    if(questionNum === 2) {
+  if (questionNum === 'b') {
     $(".question").text("Do you prefer the sea or mountain?");
-    $("#indoors").attr("id", "sea").text("Sea");
-    $("#outdoors").attr("id", "mountain").text("Mountain");
+    $("#left").text("Sea");
+    $("#right").text("Mountain");
+    qCount++;
+    $("#qNum").text(qCount);
   }
-      if(questionNum === 3) {
+  if (questionNum === '') {
     $(".question").text("Do you prefer libraries or cafes?");
-    $("#day").attr("id", "libraries").text("Libraries");
-    $("#night").attr("id", "cafes").text("Cafes");
+    $("#left").text("Libraries");
+    $("#right").text("Cafes");
+    qCount++;
+    $("#qNum").text(qCount);
   }
-      if(questionNum === 4) {
+  if (questionNum === 4) {
     $(".question").text("Do you prefer the sound of rain or fire?");
-    $("#day").attr("id", "rain").text("Rain");
-    $("#night").attr("id", "fire").text("Fire");
+    $("#left").text("Rain");
+    $("#right").text("Fire");
+    qCount++;
+    $("#qNum").text(qCount);
   }
-  
 }
 
-$("#indoors").click(function() {
-  questionNum = 1;
+$("#left").click(function () {
+  questionNum += "a";
   nextQuestion();
 });
 
-$("#outdoors").click(function() {
-  questionNum = 2;
-  nextQuestion();
-});
-
-$("#day").click(function() {
-  questionNum = 3;
-  nextQuestion();
-});
-
-$("#night").click(function() {
-  questionNum = 4;
-  nextQuestion();
-});
-
-$("#sea").click(function() {
-  questionNum = 5;
-  nextQuestion();
-});
-
-$("#mountains").click(function() {
-  questionNum = 6;
+$("#right").click(function () {
+  questionNum += "b";
   nextQuestion();
 });
