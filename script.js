@@ -25,7 +25,6 @@ function nextQuestion() {
   if (questionNum === "aa") {
     $(".question").text("Do you prefer libraries or cafes?");
     $("#left").text("Libraries");
-    // .attr("onclick", "window.location='/audio.html'");
     $("#right").text("Cafes");
     qCount++;
     $("#qNum").text(qCount);
@@ -56,26 +55,42 @@ function nextQuestion() {
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/library.wav?v=1668289725921"
     );
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146")
     window.location = "/audio.html";
   }
   if (questionNum === "aab") {
-    $("#sound").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/cafe.wav?v=1668294218990");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/cafe.gif?v=1668290454278")
     window.location = "/audio.html";
   }
   if (questionNum === "aba") {
-    $("#sound").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892");
+    $("#sound").attr("src", "");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892")
     window.location = "/audio.html";
   }
   if (questionNum === "abb") {
     $("#sound").attr("src", "");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/fire.gif?v=1668290129360")
+    window.location = "/audio.html";
+  }
+  if (questionNum === "baa") {
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/beach.wav?v=1668294608803");
+    $("#finalGif").attr("src", "")
+    window.location = "/audio.html";
+  }
+    if (questionNum === "bab") {
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/beach.wav?v=1668294608803");
+    $("#finalGif").attr("src", "")
     window.location = "/audio.html";
   }
   if (questionNum === "bba") {
     $("#sound").attr("src", "");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/day%20mountain.gif?v=1668290557294")
     window.location = "/audio.html";
   }
   if (questionNum === "bbb") {
     $("#sound").attr("src", "");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/mountain.gif?v=1668289994704")
     window.location = "/audio.html";
   }
 }
