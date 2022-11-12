@@ -54,7 +54,8 @@ function nextQuestion() {
     $(".question").text("Final result for library");
     // $("#left").text("Day");
     // $("#right").text("Night");
-    button.style.visibility = "hidden";
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -62,6 +63,8 @@ function nextQuestion() {
     $(".question").text("Final result for cafe");
     // $("#left").text("Day");
     // $("#right").text("Night");
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -69,6 +72,8 @@ function nextQuestion() {
     $(".question").text("Final result for rain");
     // $("#left").text("Day");
     // $("#right").text("Night");
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -76,6 +81,8 @@ function nextQuestion() {
     $(".question").text("Final result for fire");
     // $("#left").text("Day");
     // $("#right").text("Night");
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -83,6 +90,8 @@ function nextQuestion() {
     $(".question").text("Final result for mountain in the day");
     // $("#left").text("Day");
     // $("#right").text("Night");
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
@@ -90,6 +99,8 @@ function nextQuestion() {
     $(".question").text("Final result for mountain in the night");
     // $("#left").text("Day");
     // $("#right").text("Night");
+    // $("#left").style.display = "none";
+    // $("#right").style.display = "none";
     qCount++;
     $("#qNum").text(qCount);
   }
