@@ -25,6 +25,7 @@ function nextQuestion() {
   if (questionNum === "aa") {
     $(".question").text("Do you prefer libraries or cafes?");
     $("#left").text("Libraries");
+    // .attr("onclick", "window.location='/audio.html'");
     $("#right").text("Cafes");
     qCount++;
     $("#qNum").text(qCount);
@@ -51,55 +52,31 @@ function nextQuestion() {
     $("#qNum").text(qCount);
   }
   if (questionNum === "aaa") {
-    $(".question").text("Final result for library");
-    
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr(
+      "src",
+      "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/library.wav?v=1668289725921"
+    );
+    window.location = "/audio.html";
   }
   if (questionNum === "aab") {
-    $(".question").text("Final result for cafe");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr("src", "");
+    window.location = "/audio.html";
   }
   if (questionNum === "aba") {
-    $(".question").text("Final result for rain");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892");
+    window.location = "/audio.html";
   }
   if (questionNum === "abb") {
-    $(".question").text("Final result for fire");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr("src", "");
+    window.location = "/audio.html";
   }
   if (questionNum === "bba") {
-    $(".question").text("Final result for mountain in the day");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr("src", "");
+    window.location = "/audio.html";
   }
   if (questionNum === "bbb") {
-    $(".question").text("Final result for mountain in the night");
-    // $("#left").text("Day");
-    // $("#right").text("Night");
-    // $("#left").style.display = "none";
-    // $("#right").style.display = "none";
-    qCount++;
-    $("#qNum").text(qCount);
+    $("#sound").attr("src", "");
+    window.location = "/audio.html";
   }
 }
 
