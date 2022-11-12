@@ -31,6 +31,16 @@ html {
   height: 100%;
 }
 
+/* body {
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 1;
+} */
+
 .vertical-center {
   margin: 0;
   top: 50%;

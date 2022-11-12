@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!--
       This is the page head - it contains info the browser uses to display the page
       You won't see what's in the head in the page
@@ -25,39 +24,47 @@
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        opacity: 0;
+        transition-duration: 3s;
+        transition-property: opacity;
+      }
+
+      body.fade {
+        opacity: 1;
+      }
+    </style>
   </head>
-  
+
   <body>
+    <script>
+      document.body.className = "fade";
+    </script>
     <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
         <h1 class="title">Question <output id="click">1</output>/10</h1>
-        
-        <p class ="question"> Do you prefer being indoors or outdoors? </p>
-         <div class = "container">
-           
-       
-        <button class="answerButton" type="button" onclick="onClick()">
-         Indoors
-          
-        </button>
-        
-           
-        <button class="answerButton" type="button" onclick="onClick()">
-          Outdoors
-        </button>
-    
- </div>
-  
 
-        
-        
+        <p class="question">Do you prefer being indoors or outdoors?</p>
+        <div class="container">
+          <button class="answerButton" id="indoors" type="button">
+            Indoors
+          </button>
+
+          <button class="answerButton" id="outdoors" type="button">
+            Outdoors
+          </button>
+        </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </body>
-  
 </html>

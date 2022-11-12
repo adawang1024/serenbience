@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,13 +27,13 @@
     />
     <style>
       body {
-        opacity: 1;
-        transition-duration: 0.7s;
+        opacity: 0;
+        transition-duration: 3s;
         transition-property: opacity;
       }
 
       body.fade {
-        opacity: 100;
+        opacity: 1;
       }
     </style>
   </head>
@@ -68,5 +63,6 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </body>
 </html>

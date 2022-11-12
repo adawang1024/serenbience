@@ -1,37 +1,26 @@
-/*
-This is your site JavaScript code - you can add interactivity and carry out processing
-- Initially the JS writes a message to the console, and moves a button you can add from the README
-*/
+let questionNum = 0;
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
-
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the "Next steps" in the README
-*/
-const btn = document.querySelector("button"); // Get the button from the page
-// Detect clicks on the button
-if (btn) {
-  btn.onclick = function() {
-    // The JS works in conjunction with the 'dipped' code in style.css
-    btn.classList.toggle("dipped");
-  };
+function nextQuestion() {
+  if(questionNum = 1) {
+    $(".question").text("Do you prefer day or night?");
+    $("#indoors").attr("id", "day");
+    $("#outdoors").attr("id", "night");
+  }
+    if(questionNum = 2) {
+    $(".question").text("Do you prefer day or night?");
+    $("#indoors").attr("id", "day");
+    $("#outdoors").attr("id", "night");
+  }
 }
 
-// This is a single line JS comment
-/*
-This is a comment that can span multiple lines 
-- use comments to make your own notes!
-*/
+$("#indoors").click(function() {
+  questionNum = 1;
+  nextQuestion();
+});
 
-//maybe dont need this if we separate questions into pages
+$("#outdoors").click(function() {
+  questionNum = 2;
+  nextQuestion();
+});
 
-// var clicks = 0;
-
-// function onClick() {
-//   clicks += 1;
-//   document.getElementById("click").innerHTML = clicks;
-// };
 
