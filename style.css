@@ -106,6 +106,7 @@ button {
   margin: 2em;
   padding: 1.5em;
   font-size: 1em;
+  text-transform:uppercase;
 }
 
 .question {

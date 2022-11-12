@@ -50,6 +50,18 @@ function nextQuestion() {
     qCount++;
     $("#qNum").text(qCount);
   }
+  if (questionNum.length >= 3) {
+    $("#left")
+      .attr("onclick", "sound.play()")
+      .text("Play")
+      // .append('<i class="fa-solid fa-play"></i>');
+
+    $("#right")
+      .attr("onclick", "sound.pause()")
+      .text('Pause <i class="fa-solid fa-pause"></i>');
+    $("h1").text("Enjoy your ambience!");
+    $(".question").css("visibility", "hidden");
+  }
   if (questionNum === "aaa") {
     $("#sound").attr(
       "src",
@@ -59,13 +71,6 @@ function nextQuestion() {
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
     );
-    $("#left")
-      .attr("onclick", "sound.play()")
-      .text('Play');
-   // <i class="fa-solid fa-play"></i>
-    $("#right")
-      .attr("onclick", "sound.pause()")
-      .text('Pause <i class="fa-solid fa-pause"></i>');
   }
   if (questionNum === "aab") {
     $("#sound").attr(
