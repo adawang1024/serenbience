@@ -57,10 +57,15 @@ function nextQuestion() {
     );
     $("#finalGif").attr(
       "src",
-      // "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
-      "https://www.google.com/search?q=image&sxsrf=ALiCzsYkbsLlSwSJKTYSr4Ax5kylj3UJdg:1668296045342&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiMtqaJ56n7AhXAnokEHVyOBBQQ_AUoAXoECAIQAw&biw=1422&bih=632&dpr=1.35#imgrc=ThwRLf7Ik44zdM"
+      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
     );
-    window.location = "/audio.html";
+    $("#left")
+      .attr("onclick", "sound.play()")
+      .text('Play');
+   // <i class="fa-solid fa-play"></i>
+    $("#right")
+      .attr("onclick", "sound.pause()")
+      .text('Pause <i class="fa-solid fa-pause"></i>');
   }
   if (questionNum === "aab") {
     $("#sound").attr(
@@ -94,7 +99,10 @@ function nextQuestion() {
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/beach.wav?v=1668294608803"
     );
-    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/beach.webp?v=1668290085900");
+    $("#finalGif").attr(
+      "src",
+      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/beach.webp?v=1668290085900"
+    );
     window.location = "/audio.html";
   }
 
@@ -141,4 +149,3 @@ $("#right").click(function () {
 // var player = document.getElementById('playButton');
 // player.pause();
 // player.src = player.src;
-
