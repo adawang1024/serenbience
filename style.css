@@ -35,7 +35,7 @@ html {
   margin: 0;
   top: 50%;
   left: 50%;
-  position:absolute;
+  position: absolute;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -63,17 +63,25 @@ h1 {
   text-align: center;
 }
 
+button {
+  color: rgba(117, 114, 180, 1);
+  border-color: rgba(117, 114, 180, 1);
+  background-color: #cdf1e7;
+  font-family: "Sono", sans-serif;
+  
+}
+
 .quizButton {
-  position:relative;
+  position: relative;
   display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgba(117, 114, 180, 1);
-  font-family: "Sono", sans-serif;
-  background-color: #cdf1e7;
+  /*   color: rgba(117, 114, 180, 1); */
+  /*   font-family: "Sono", sans-serif; */
+  /*   background-color: #cdf1e7; */
   border-style: solid;
-  border-color: rgba(117, 114, 180, 1);
+  /*   border-color: rgba(117, 114, 180, 1); */
   border-radius: 10px;
   margin-top: 2em;
   padding: 1.5em;
@@ -81,15 +89,16 @@ h1 {
 }
 
 .answerButton {
-  color: ;
+  /*   color: rgba(7, 45, 145, 1); */
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #78d0e2;
+  /*   background-color: #78d0e2; */
   border-style: solid;
-  border-color: rgba(117, 114, 180, 1);
+  /*   border-color: rgba(117, 114, 180, 1); */
   border-radius: 10px;
   margin: 2em;
+  padding: 3em;
 }
 
 .question {

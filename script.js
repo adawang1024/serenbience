@@ -26,9 +26,11 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 
-var qCount = 0;
+//maybe dont need this if we separate questions into pages
 
-if(document.getElementsByClassName('answerButton').clicked == true)
-{
-   alert("button was clicked");
-}
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("click").innerHTML = clicks;
+};
