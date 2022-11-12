@@ -110,6 +110,7 @@ button {
   margin: 2em;
   padding: 1.5em;
   font-size: 1em;
+    font-weight: bold;
 }
 
 .question {
@@ -119,6 +120,7 @@ button {
   font-family: "Sono", sans-serif;
   font-size: 1.45em;
   color: #abdbe3;
+  
 }
 
 button:hover {
