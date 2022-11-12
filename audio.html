@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Final Result</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        opacity: 0;
+        transition-duration: 3s;
+        transition-property: opacity;
+      }
+
+      body.fade {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      document.body.className = "fade";
+    </script>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <div class="vertical-center">
+          <h1 class="title">Enjoy your ambience!</h1>
+
+          <div class="container">
+            <a href="Questions/question1.html">
+              <button class="quizButton" id="startButton">
+                Find another sound
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
