@@ -28,9 +28,10 @@ This is a comment that can span multiple lines
 
 //maybe dont need this if we separate questions into pages
 
-var clicks = 0;
+// var clicks = 0;
 
-function onClick() {
-  clicks += 1;
-  document.getElementById("click").innerHTML = clicks;
-};
+// function onClick() {
+//   clicks += 1;
+//   document.getElementById("click").innerHTML = clicks;
+// };
+

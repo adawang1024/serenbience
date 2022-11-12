@@ -24,40 +24,49 @@
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        opacity: 1;
+        transition-duration: 0.7s;
+        transition-property: opacity;
+      }
+
+      body.fade {
+        opacity: 100;
+      }
+    </style>
   </head>
-  
+
   <body>
+    <script>
+      document.body.className = "fade";
+    </script>
     <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
         <div class="vertical-center">
-          
-        
-        <h1 class="title">The Ambience Wanderer</h1>
-        
-        <p class="description">Find the perfect ambience according to your mood right now ♡</p>
+          <h1 class="title">The Ambience Wanderer</h1>
 
-  
-          
- <div class="container">
-   
-      
-          <a href="/question1.html">
-          <button class="quizButton" id="startButton">
-              Start your journey
-          </button>
-          </a>
+          <p class="description">
+            Find the perfect ambience according to your mood right now ♡
+          </p>
+
+          <div class="container">
+            <a href="Questions/question1.html">
+              <button class="quizButton" id="startButton">
+                Start your journey
+              </button>
+            </a>
+          </div>
         </div>
-     </div>
-
-        
-        
       </div>
     </div>
   </body>
-  
 </html>
