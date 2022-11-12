@@ -26,7 +26,9 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 
-if(document.getElementById('button').clicked == true)
+var qCount = 0;
+
+if(document.getElementsByClassName('answerButton').clicked == true)
 {
    alert("button was clicked");
 }
