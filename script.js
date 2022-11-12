@@ -57,7 +57,8 @@ function nextQuestion() {
     );
     $("#finalGif").attr(
       "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
+      // "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
+      "https://www.google.com/search?q=image&sxsrf=ALiCzsYkbsLlSwSJKTYSr4Ax5kylj3UJdg:1668296045342&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiMtqaJ56n7AhXAnokEHVyOBBQQ_AUoAXoECAIQAw&biw=1422&bih=632&dpr=1.35#imgrc=ThwRLf7Ik44zdM"
     );
     window.location = "/audio.html";
   }
@@ -141,8 +142,3 @@ $("#right").click(function () {
 // player.pause();
 // player.src = player.src;
 
-var favoritemovie = "Shrek";
-sessionStorage.setItem("favoriteMovie", favoritemovie);
-
-var favoritemovie = sessionStorage.getItem("favoriteMovie");
-console.log(favoritemovie);
