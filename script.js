@@ -140,8 +140,9 @@ $("#left").click(function () {
     questionNum += "a";
     nextQuestion();
   }
-  $("body").fadeOut(1500);
-  $("body").fadeToggle(1500);
+  //  $("body").css("display","none");
+  // // $("body").fadeOut(1500);
+  //  $("body").fadeIn(1500);
 });
 
 $("#right").click(function () {
@@ -149,8 +150,9 @@ $("#right").click(function () {
     questionNum += "b";
     nextQuestion();
   }
-  $("body").fadeOut(1500);
-  $("body").fadeToggle(1500);
+  //  $("body").css("display","none");
+  // // $("body").fadeOut(1500);
+  //  $("body").fadeIn(1500);
 });
 
 $("#startButton").click(function () {
@@ -166,3 +168,14 @@ $("#startButton").click(function () {
 //     $("#quizBody").delay(10).fadeIn(2000);
 //   });
 // });
+
+$(document).ready(function () {
+  $("button.left").click(function () {
+    $("#quizBody").fadeOut(1000);
+    $("#quizBody").fadeIn(1000);
+  });
+  $("button.right").click(function () {
+    $("#quizBody").fadeOut(1000);
+    $("#quizBody").fadeIn(1000);
+  });
+});
