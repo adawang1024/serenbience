@@ -44,7 +44,7 @@ function nextQuestion() {
     $("#qNum").text(qCount);
   }
   if (questionNum === "bb") {
-    $(".question").text("Do you prefer the mountain in the day or at night?");
+    $(".question").text("Do you prefer the day or night?");
     $("#left").text("Day");
     $("#right").text("Night");
     qCount++;
@@ -59,6 +59,7 @@ function nextQuestion() {
     $("#right")
       .attr("onclick", "sound.pause()")
       .text('Pause <i class="fa-solid fa-pause"></i>');
+    $("i").class("fa-solid fa-play");
     $("h1").text("Enjoy your ambience!");
     $(".question").css("visibility", "hidden");
   }
