@@ -163,12 +163,12 @@ $("#startButton").click(function () {
   $("#right").text("Outdoors");
 });
 
-// $(document).ready(function () {
-//   $("button").click(function () {
-//     $("#quizBody").fadeOut(10);
-//     $("#quizBody").delay(10).fadeIn(2000);
-//   });
-// });
+$(document).ready(function () {
+  $("button").click(function () {
+    $("body").fadeOut(10);
+    $("body").delay(10).fadeIn(2000);
+  });
+});
 
 // $(document).ready(function () {
 //   $("#answerButton").click(function () {
