@@ -44,7 +44,8 @@ function nextQuestion() {
     $("#play").addClass("fa-play");
     $("#pause").addClass("fa-pause");
     $("h1").text("Enjoy your ambience!");
-    $(".question").css("visibility", "hidden");
+    $(".question").css("display", "none");
+    $("#startButton").text("Find another sound");
   }
   if (questionNum === "aaa") {
     $("#sound").attr(
