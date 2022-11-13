@@ -141,7 +141,9 @@ audio {
 
 #finalGif {
   opacity: 0.4;
-  background-size: cover;
+}
+ 
+  
  
   
 /*   top: 0;
