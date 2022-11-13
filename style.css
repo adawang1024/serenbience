@@ -142,6 +142,9 @@ audio {
   opacity: 0.4;
   position: relative;
   max-height: 20em;
+  max-height:20vmax;
+  max-width:50em;
+  max-width:50vmax;
 }
 
 .center {
