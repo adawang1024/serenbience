@@ -72,14 +72,14 @@ function audioPage() {
     );
   }
   if (questionNum === "aba") {
-    $("#sound").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/rain.wav?v=1668322829968");
     $("#finalGif").attr(
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892"
     );
   }
   if (questionNum === "abb") {
-    $("#sound").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/fire.wav?v=1668322823019");
     $("#finalGif").attr(
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/fire.gif?v=1668290129360"
@@ -97,19 +97,19 @@ function audioPage() {
   }
 
   if (questionNum === "bab") {
-    $("#sound").attr("src", "");
-    $("#finalGif").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/water.wav?v=1668322833550");
+    $("#finalGif").attr("src", "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/water.gif?v=1668289959260");
   }
 
   if (questionNum === "bba") {
-    $("#sound").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/birds.wav?v=1668322811650");
     $("#finalGif").attr(
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/day%20mountain.gif?v=1668290557294"
     );
   }
   if (questionNum === "bbb") {
-    $("#sound").attr("src", "");
+    $("#sound").attr("src", "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/crickets.wav?v=1668322820041");
     $("#finalGif").attr(
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/mountain.gif?v=1668289994704"
