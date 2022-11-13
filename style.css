@@ -128,16 +128,22 @@ audio {
   visibility: hidden;
 }
 
+/*
 #containerImg {
   /*   display: flex; */
-  justify-content: center;
+/*  justify-content: center;
   align-items: center;
   text-align: center;
 /*   position: absolute; */
-}
+
+
+
 
 #finalGif {
   opacity: 0.4;
+  background-size: cover;
+ 
+  
 /*   top: 0;
   bottom: 0;
   left: 0;
