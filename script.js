@@ -1,5 +1,3 @@
-$("#firstPage").fadeIn("slow");
-
 var questionNum = "";
 
 var qCount = 1;
@@ -142,8 +140,6 @@ $("#left").click(function () {
     questionNum += "a";
     nextQuestion();
   }
-  $("body").fadeOut();
-  $("body").fadeIn();
 });
 
 $("#right").click(function () {
@@ -151,8 +147,6 @@ $("#right").click(function () {
     questionNum += "b";
     nextQuestion();
   }
-  $("body").fadeOut();
-  $("body").fadeIn();
 });
 
 $("#startButton").click(function () {
@@ -161,3 +155,10 @@ $("#startButton").click(function () {
   $("#left").text("Indoors");
   $("#right").text("Outdoors");
 });
+
+// $(document).ready(function () {
+//   $("button").click(function () {
+//     $("#quizBody").fadeOut(10);
+//     $("#quizBody").delay(10).fadeIn(2000);
+//   });
+// });
