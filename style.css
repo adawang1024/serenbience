@@ -141,6 +141,7 @@ audio {
 
 #finalGif {
   opacity: 0.4;
+  position:relative;
 }
 
 

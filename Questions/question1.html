@@ -30,6 +30,10 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/b11e300b58.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         opacity: 0;
@@ -52,18 +56,17 @@
     <audio id="sound" src="" preload="auto" loop></audio>
     <div class="wrapper">
       <div class="content" role="main">
-        <div class="containerImg">
-          <image id="finalGif" src=""></image>
-        </div>
         <!-- This is the start of content for our page -->
         <h1 class="title">Question <output id="qNum">1</output></h1>
-
+        <image id="finalGif" src=""></image>
         <p class="question">Do you prefer being indoors or outdoors?</p>
         <div class="container">
-          <button class="answerButton" id="left" type="button">Indoors<i></i></button>
+          <button class="answerButton" id="left" type="button">
+            Indoors<i id="play" class="fa-solid"></i>
+          </button>
 
           <button class="answerButton" id="right" type="button">
-            Outdoors<i></i>
+            Outdoors<i id="pause" class="fa-solid"></i>
           </button>
         </div>
       </div>
