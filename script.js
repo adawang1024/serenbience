@@ -2,51 +2,55 @@ var questionNum = "";
 
 var qCount = 1;
 
-// let currId1 = '#indoors';
-// let currId2 = '#outdoors';
-
 function nextQuestion() {
   if (questionNum === "a") {
-    $(".question").text("Do you prefer day or night?");
-    // $("#indoors").attr("id", "day").text("Day");
-    // $("#outdoors").attr("id", "night").text("Night");
-    $("#left").text("Day");
-    $("#right").text("Night");
+    $(".question").text("Are you a morning person, or a night owl?");
+    $("#left").text("Morning Person");
+    $("#right").text("Night Owl");
   }
   if (questionNum === "b") {
-    $(".question").text("Do you prefer the sea or mountain?");
+    $(".question").text("Sea or mountain?");
     $("#left").text("Sea");
     $("#right").text("Mountain");
   }
   if (questionNum === "aa") {
-    $(".question").text("Do you prefer libraries or cafes?");
-    $("#left").text("Libraries");
-    $("#right").text("Cafes");
+    $(".question").text("Would you rather study in a library or a cafe?");
+    $("#left").text("Library");
+    $("#right").text("Cafe");
   }
   if (questionNum === "ab") {
-    $(".question").text("Do you prefer the sound of rain or fire?");
-    $("#left").text("Rain");
+    $(".question").text("Water or fire?");
+    $("#left").text("Water");
     $("#right").text("Fire");
   }
   if (questionNum === "ba") {
-    $(".question").text("Do you prefer being on the beach or in the water?");
+    $(".question").text(
+      "Would you rather stay on the beach, or get in the water?"
+    );
     $("#left").text("Beach");
     $("#right").text("Water");
   }
   if (questionNum === "bb") {
-    $(".question").text("Do you prefer the day or night?");
-    $("#left").text("Day");
-    $("#right").text("Night");
+    $(".question").text("Are you a morning person, or a night owl?");
+    $("#left").text("Morning Person");
+    $("#right").text("Night Owl");
   }
   if (questionNum.length >= 3) {
-    $("#left").attr("onclick", "sound.play()").text("Play");
-    $("#right").attr("onclick", "sound.pause()").text("Pause");
-    $("#play").addClass("fa-play");
-    $("#pause").addClass("fa-pause");
-    $("h1").text("Enjoy your ambience!");
-    $(".question").css("display", "none");
-    $("#startButton").text("Find another sound");
+    audioPage();
   }
+  qCount++;
+  $("#qNum").text(qCount);
+}
+
+function audioPage() {
+  $("#left").attr("onclick", "sound.play()").text("Play");
+  $("#right").attr("onclick", "sound.pause()").text("Pause");
+  $("#play").addClass("fa-play");
+  $("#pause").addClass("fa-pause");
+  $("h1").text("Enjoy your ambience!");
+  $(".question").css("display", "none");
+  $("#startButton").text("Find another sound");
+
   if (questionNum === "aaa") {
     $("#sound").attr(
       "src",
@@ -111,26 +115,25 @@ function nextQuestion() {
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/mountain.gif?v=1668289994704"
     );
   }
-  qCount++;
-  $("#qNum").text(qCount);
 }
 
 $("#left").click(function () {
-  questionNum += "a";
-  nextQuestion();
+  if (questionNum.length < 3) {
+    questionNum += "a";
+    nextQuestion();
+  }
 });
 
 $("#right").click(function () {
-  questionNum += "b";
-  nextQuestion();
+  if (questionNum.length < 3) {
+    questionNum += "b";
+    nextQuestion();
+  }
 });
 
-//audio codes
-
-// 'aaa' = library
-// 'aab' = cafe
-// 'aba' = rain
-
-// var player = document.getElementById('playButton');
-// player.pause();
-// player.src = player.src;
+$("#startButton").click(function () {
+  questionNum = 0;
+  $(".question").text("Do you prefer being indoors or outdoors?");
+  $("#left").text("Indoors");
+  $("#right").text("Outdoors");
+});
