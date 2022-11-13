@@ -1,3 +1,5 @@
+$("body").fadeIn("slow");
+
 var questionNum = "";
 
 var qCount = 1;
