@@ -1,6 +1,7 @@
-var questionNum = "";
+//global variables
+let questionNum = "";
 
-var qCount = 1;
+let qCount = 1;
 
 function nextQuestion() {
   if (questionNum === "a") {
@@ -165,8 +166,8 @@ $("#startButton").click(function () {
 
 $(document).ready(function () {
   $("button").click(function () {
-    $("body").fadeOut(10);
-    $("body").delay(10).fadeIn(2000);
+    $("wrapper").fadeOut(100);
+    $("wrapper").delay(10).fadeIn(2000);
   });
 });
 
