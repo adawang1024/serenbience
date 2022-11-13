@@ -169,13 +169,13 @@ $("#startButton").click(function () {
 //   });
 // });
 
-$(document).ready(function () {
-  $("button.left").click(function () {
-    $("#quizBody").fadeOut(1000);
-    $("#quizBody").fadeIn(1000);
-  });
-  $("button.right").click(function () {
-    $("#quizBody").fadeOut(1000);
-    $("#quizBody").fadeIn(1000);
-  });
-});
+// $(document).ready(function () {
+//   $("#answerButton").click(function () {
+//     $("#quizBody").css("opacity", 0);
+//     $("#quizBody").fadeIn(1000);
+//   });
+//   $("button.right").click(function () {
+//     $("#quizBody").fadeOut(1000);
+//     $("#quizBody").fadeIn(1000);
+//   });
+// });
