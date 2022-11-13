@@ -16,6 +16,14 @@ to this section's matching END comment to see page-specific styles.
 /* Our default values set as CSS variables */
 
 html {
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+}
+
+body {
+  height: 100%;
   background: rgb(64, 163, 194);
   background: radial-gradient(
     circle,
@@ -26,10 +34,7 @@ html {
     rgba(7, 45, 145, 1) 90%
   );
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  text-align:center;
+  background-attachment: fixed;
 }
 
 .vertical-center {
@@ -48,6 +53,7 @@ h1 {
   text-shadow: 2px 2px 2px #9baeab;
   position: relative;
   font-size: 5em;
+  font-size: 5vmax;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -58,6 +64,7 @@ h1 {
   font-family: "Sono", sans-serif;
   color: #cdf1e7;
   font-size: 1.45em;
+  font-size: 1.5vmax;
 }
 
 .container {
@@ -66,37 +73,37 @@ h1 {
 }
 
 button {
-  color: rgba(117, 114, 180, 1);
-  border-color: rgba(117, 114, 180, 1);
-  background-color: #cdf1e7;
   font-family: "Sono", sans-serif;
   border-style: solid;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .quizButton {
-  position: relative;
   display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 10px;
   margin-top: 2em;
-  padding: 1.5em;
-  text-transform: uppercase;
+  padding: 1em;
+  background-color:rgba(64, 163, 194, 1);
+  color:#cdf1e7;
 }
 
 .answerButton {
-  /*   color: rgba(7, 45, 145, 1); */
+  color: rgba(117, 114, 180, 1);
+  border-color: rgba(117, 114, 180, 1);
+  background-color: #cdf1e7;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*   background-color: #78d0e2; */
   border-style: solid;
-  /*   border-color: rgba(117, 114, 180, 1); */
   border-radius: 10px;
   margin: 2em;
   padding: 1.5em;
   font-size: 1em;
+  font-size: 1vmax;
   text-transform:uppercase;
 }
 
@@ -106,6 +113,7 @@ button {
   text-align: center;
   font-family: "Sono", sans-serif;
   font-size: 1.45em;
+  font-size: 1.5vmax;
   color: #abdbe3;
 }
 
