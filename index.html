@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
@@ -11,7 +10,7 @@
       You can write text in a comment and the content won't be visible in the page
     -->
 
-    <title>The Ambience Wanderer</title>
+    <title>Serenbience</title>
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -25,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:ital,wght@1,800&family=Sono&display=swap"
       rel="stylesheet"
     />
-<!--     <style>
+    <!--     <style>
       body {
         opacity: 0;
         transition-duration: 3s;
@@ -36,10 +35,25 @@
         opacity: 1;
       }
     </style> -->
+    <style>
+      body {
+        animation: fadeInAnimation ease 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
 
   <body>
-<!--     <script>
+    <!--     <script>
       document.body.className = "fade";
     </script> -->
     <!-- The wrapper and content divs set margins and positioning -->
@@ -47,7 +61,9 @@
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
         <div class="vertical-center">
-          <h1 class="title">The Ambience Wanderer</h1>
+          <h1 class="title">
+            Serenbience: <br /><span id="smaller"> the ambience wanderer</span>
+          </h1>
 
           <p class="description">
             Find the perfect ambience for how you're feeling now ♡

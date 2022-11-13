@@ -34,7 +34,7 @@
       src="https://kit.fontawesome.com/b11e300b58.js"
       crossorigin="anonymous"
     ></script>
-<!--     <style>
+    <!--     <style>
       body {
         opacity: 0;
         transition-duration: 3s;
@@ -45,10 +45,25 @@
         opacity: 1;
       }
     </style> -->
+    <style>
+      body {
+        animation: fadeInAnimation ease 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
 
-  <body>
-<!--     <script>
+  <body class=>
+    <!--     <script>
       document.body.className = "fade";
     </script> -->
     <!-- The wrapper and content divs set margins and positioning -->
@@ -57,26 +72,24 @@
     <div class="wrapper">
       <div class="content" role="main">
         <div class="vertical-center">
-        <h1 class="title">Question <output id="qNum">1</output></h1>
-        <p class="question">Do you prefer being indoors or outdoors?</p>
-        <image id="finalGif" src=""></image>
-        <div class="container">
-          <button class="answerButton" id="left" type="button">
-            Indoors<i id="play" class="fa-solid"></i>
-          </button>
-
-          <button class="answerButton" id="right" type="button">
-            Outdoors<i id="pause" class="fa-solid"></i>
-          </button>
-          
+          <h1 class="title">Question <output id="qNum">1</output></h1>
+          <p class="question">Do you prefer being indoors or outdoors?</p>
+          <image id="finalGif" src=""></image>
           <div class="container">
-            <a href="">
-              <button class="quizButton" id="startButton">
-                Start over
-              </button>
-            </a>
+            <button class="answerButton" id="left" type="button">
+              Indoors<i id="play" class="fa-solid"></i>
+            </button>
+
+            <button class="answerButton" id="right" type="button">
+              Outdoors<i id="pause" class="fa-solid"></i>
+            </button>
+
+            <div class="container">
+              <a href="">
+                <button class="quizButton" id="startButton">Start over</button>
+              </a>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

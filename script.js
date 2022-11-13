@@ -1,4 +1,4 @@
-$("body").fadeIn("slow");
+$("#firstPage").fadeIn("slow");
 
 var questionNum = "";
 
@@ -142,6 +142,8 @@ $("#left").click(function () {
     questionNum += "a";
     nextQuestion();
   }
+  $("body").fadeOut();
+  $("body").fadeIn();
 });
 
 $("#right").click(function () {
@@ -149,6 +151,8 @@ $("#right").click(function () {
     questionNum += "b";
     nextQuestion();
   }
+  $("body").fadeOut();
+  $("body").fadeIn();
 });
 
 $("#startButton").click(function () {
