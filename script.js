@@ -157,6 +157,7 @@ $("#right").click(function () {
 
 $("#startButton").click(function () {
   questionNum = 0;
+  qCount = 1;
   $(".question").text("Do you prefer being indoors or outdoors?");
   $("#left").text("Indoors");
   $("#right").text("Outdoors");
