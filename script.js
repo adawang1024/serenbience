@@ -3,9 +3,9 @@ let questionNum = "";
 let qCount = 1;
 
 /**
-* function nextQuestion moves the quiz on to the next question when an answer is 
-* selected.
-*/
+ * function nextQuestion moves the quiz on to the next question when an answer is
+ * selected.
+ */
 function nextQuestion() {
   if (questionNum === "a") {
     $(".question").text("Are you a morning person, or a night owl?");
@@ -46,11 +46,10 @@ function nextQuestion() {
   $("#qNum").text(qCount);
 }
 
-
 /**
-* function audioPage brings the user to the final audio when the last question of the
-* quiz is answered.
-*/
+ * function audioPage brings the user to the final audio when the last question of the
+ * quiz is answered.
+ */
 function audioPage() {
   $("#left").attr("onclick", "sound.play()").text("Play");
   $("#right").attr("onclick", "sound.pause()").text("Pause");
@@ -65,50 +64,60 @@ function audioPage() {
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/library.wav?v=1668289725921"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/library.gif?v=1668290619146"
+      )
+      .attr("alt", "A library.");
   }
   if (questionNum === "aab") {
     $("#sound").attr(
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/cafe.wav?v=1668294218990"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/cafe.gif?v=1668290454278"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/cafe.gif?v=1668290454278"
+      )
+      .attr("alt", "A steaming coffee cup on a table.");
   }
   if (questionNum === "aba") {
     $("#sound").attr(
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/rain.wav?v=1668322829968"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/Rain.gif?v=1668292491892"
+      )
+      .attr("alt", "Rain falling down on a rushing river.");
   }
   if (questionNum === "abb") {
     $("#sound").attr(
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/fire.wav?v=1668322823019"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/fire.gif?v=1668290129360"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/fire.gif?v=1668290129360"
+      )
+      .attr("alt", "A cartoon fire creature.");
   }
   if (questionNum === "baa") {
     $("#sound").attr(
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/beach.wav?v=1668294608803"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/beach.webp?v=1668290085900"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/beach.webp?v=1668290085900"
+      )
+      .attr("alt", "A tropical beach at sunset.");
   }
 
   if (questionNum === "bab") {
@@ -116,10 +125,12 @@ function audioPage() {
       "src",
       "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/water.wav?v=1668322833550"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/water.gif?v=1668289959260"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/water.gif?v=1668289959260"
+      )
+      .attr("alt", "A rolling ocean.");
   }
 
   if (questionNum === "bba") {
@@ -127,23 +138,26 @@ function audioPage() {
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/birds.wav?v=1668322811650"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/day%20mountain.gif?v=1668290557294"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/day%20mountain.gif?v=1668290557294"
+      )
+      .attr("alt", "A green forest with sunshine.");
   }
   if (questionNum === "bbb") {
     $("#sound").attr(
       "src",
       "https://cdn.glitch.me/16f8327a-2616-43f1-a676-cb78424240ed/crickets.wav?v=1668322820041"
     );
-    $("#finalGif").attr(
-      "src",
-      "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/mountain.gif?v=1668289994704"
-    );
+    $("#finalGif")
+      .attr(
+        "src",
+        "https://cdn.glitch.global/16f8327a-2616-43f1-a676-cb78424240ed/mountain.gif?v=1668289994704"
+      )
+      .attr("alt", "A mountain at night with a moon over it.");
   }
 }
-
 
 // Moves onto the next question under the left answer in the quiz.
 $("#left").click(function () {
@@ -153,7 +167,6 @@ $("#left").click(function () {
   }
 });
 
-
 // Moves onto the next question under the right answer in the quiz.
 $("#right").click(function () {
   if (questionNum.length < 3) {
@@ -161,7 +174,6 @@ $("#right").click(function () {
     nextQuestion();
   }
 });
-
 
 // resets the quiz when the startButton is clicked.
 $("#startButton").click(function () {
