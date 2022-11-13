@@ -1,8 +1,11 @@
 //global variables
 let questionNum = "";
-
 let qCount = 1;
 
+/**
+* function nextQuestion moves the quiz on to the next question when an answer is 
+* selected.
+*/
 function nextQuestion() {
   if (questionNum === "a") {
     $(".question").text("Are you a morning person, or a night owl?");
@@ -43,6 +46,11 @@ function nextQuestion() {
   $("#qNum").text(qCount);
 }
 
+
+/**
+* function audioPage brings the user to the final audio when the last question of the
+* quiz is answered.
+*/
 function audioPage() {
   $("#left").attr("onclick", "sound.play()").text("Play");
   $("#right").attr("onclick", "sound.pause()").text("Pause");
@@ -136,48 +144,31 @@ function audioPage() {
   }
 }
 
+
+// Moves onto the next question under the left answer in the quiz.
 $("#left").click(function () {
   if (questionNum.length < 3) {
     questionNum += "a";
     nextQuestion();
   }
-  //  $("body").css("display","none");
-  // // $("body").fadeOut(1500);
-  //  $("body").fadeIn(1500);
 });
 
+
+// Moves onto the next question under the right answer in the quiz.
 $("#right").click(function () {
   if (questionNum.length < 3) {
     questionNum += "b";
     nextQuestion();
   }
-  //  $("body").css("display","none");
-  // // $("body").fadeOut(1500);
-  //  $("body").fadeIn(1500);
 });
 
+
+// resets the quiz when the startButton is clicked.
 $("#startButton").click(function () {
   questionNum = 0;
   qCount = 1;
   $(".question").text("Do you prefer being indoors or outdoors?");
+  $("#qNum").text(qCount);
   $("#left").text("Indoors");
   $("#right").text("Outdoors");
 });
-
-$(document).ready(function () {
-  $("button").click(function () {
-    $("wrapper").fadeOut(100);
-    $("wrapper").delay(10).fadeIn(2000);
-  });
-});
-
-// $(document).ready(function () {
-//   $("#answerButton").click(function () {
-//     $("#quizBody").css("opacity", 0);
-//     $("#quizBody").fadeIn(1000);
-//   });
-//   $("button.right").click(function () {
-//     $("#quizBody").fadeOut(1000);
-//     $("#quizBody").fadeIn(1000);
-//   });
-// });
