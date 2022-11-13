@@ -140,6 +140,8 @@ $("#left").click(function () {
     questionNum += "a";
     nextQuestion();
   }
+  $("body").fadeOut(1500);
+  $("body").fadeToggle(1500);
 });
 
 $("#right").click(function () {
@@ -147,6 +149,8 @@ $("#right").click(function () {
     questionNum += "b";
     nextQuestion();
   }
+  $("body").fadeOut(1500);
+  $("body").fadeToggle(1500);
 });
 
 $("#startButton").click(function () {

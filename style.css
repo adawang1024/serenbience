@@ -30,7 +30,6 @@ body {
 }
 
 h1 {
-  text-align: center;
   text-transform: lowercase;
   color: #e1fff6;
   text-shadow: 2px 2px 2px #9baeab;
@@ -43,23 +42,15 @@ h1 {
 #smaller {
   font-size: 2em;
   font-size: 2vmax;
-  line-height: 0.1em;
-  line-height: 0.1vmax;
 }
 
 .description {
-  text-align: center;
   position: relative;
   padding: 1.5em;
   font-family: "Sono", sans-serif;
   color: #cdf1e7;
   font-size: 1.45em;
   font-size: 1.5vmax;
-}
-
-.container {
-  text-align: center;
-  position: relative;
 }
 
 button {
@@ -69,14 +60,15 @@ button {
   text-transform: uppercase;
   font-size: 1em;
   font-size: 1vmax;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border-style: solid;
+  justify-content: center;
 }
 
 .quizButton {
   display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
   margin-top: 2em;
   margin-top: 2vmax;
   padding: 0.5em;
@@ -84,20 +76,15 @@ button {
   background-color: #372d73;
   color: #cdf1e7;
   border-color: #cdf1e7;
+  text-transform: uppercase;
 }
 
 .answerButton {
   color: rgba(117, 114, 180, 1);
   border-color: rgba(117, 114, 180, 1);
   background-color: #cdf1e7;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-style: solid;
-  border-radius: 10px;
   margin: 2em;
   padding: 1.5em;
-  text-transform: uppercase;
 }
 
 .question {
