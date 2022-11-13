@@ -59,7 +59,7 @@ function nextQuestion() {
     $("#right")
       .attr("onclick", "sound.pause()")
       .text('Pause <i class="fa-solid fa-pause"></i>');
-    $("i").class("fa-solid fa-play");
+    $("i").attr("class", "fa-solid fa-play");
     $("h1").text("Enjoy your ambience!");
     $(".question").css("visibility", "hidden");
   }
